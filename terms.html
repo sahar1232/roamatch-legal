@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roamatch — Terms of Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F5EB;
+    --card: #FFFFFF;
+    --ink: #2D2C20;
+    --muted: #6E6B58;
+    --olive: #55713B;
+    --olive-deep: #2E4020;
+    --moss: #E4E8CF;
+    --line: #E3DFD2;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1B1D16;
+      --card: #24271D;
+      --ink: #E9E7DA;
+      --muted: #A9A690;
+      --olive: #A3BD83;
+      --olive-deep: #C9DDAF;
+      --moss: #2F3726;
+      --line: #3A3E30;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1B1D16;
+    --card: #24271D;
+    --ink: #E9E7DA;
+    --muted: #A9A690;
+    --olive: #A3BD83;
+    --olive-deep: #C9DDAF;
+    --moss: #2F3726;
+    --line: #3A3E30;
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 16px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 5rem;
+  }
+  header { margin-bottom: 2.5rem; }
+  .mark { width: 3.25rem; height: 3.25rem; display: block; margin-bottom: 1.5rem; }
+  h1, h2, h3 {
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    color: var(--olive-deep);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  h1 { font-size: clamp(2rem, 6vw, 2.75rem); font-weight: 700; margin: 0 0 0.5rem; }
+  .meta {
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9375rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  .summary {
+    background: var(--moss);
+    border-radius: 1rem;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 3rem;
+  }
+  .summary h2 { font-size: 1.125rem; margin: 0 0 0.75rem; }
+  .summary ul { margin: 0; padding-left: 1.1rem; }
+  .summary li { margin: 0.35rem 0; }
+  nav.toc {
+    border-left: 2px solid var(--line);
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    margin: 0 0 3rem;
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9375rem;
+  }
+  nav.toc ul { list-style: none; margin: 0; padding: 0; columns: 2 14rem; column-gap: 2rem; }
+  nav.toc li { margin: 0.3rem 0; break-inside: avoid; }
+  a { color: var(--olive); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+  a:hover { color: var(--olive-deep); }
+  a:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; border-radius: 2px; }
+  section { margin: 0 0 2.75rem; }
+  h2 { font-size: 1.5rem; font-weight: 700; margin: 0 0 0.9rem; }
+  h3 { font-size: 1.0625rem; font-weight: 600; margin: 1.5rem 0 0.4rem; color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+  li { margin: 0.3rem 0; }
+  .table-wrap { overflow-x: auto; margin: 0 0 1rem; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9688rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+  th, td { text-align: left; padding: 0.75rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th {
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    color: var(--olive-deep);
+    font-size: 0.9375rem;
+  }
+  tr:last-child td { border-bottom: none; }
+  .contact {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    padding: 1.5rem 1.75rem;
+  }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+  @media (max-width: 520px) {
+    main { padding: 2.5rem 1.25rem 4rem; }
+    body { font-size: 1rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+      <rect width="64" height="64" rx="14" fill="#F9F2CE"/>
+      <path d="M24.7 13c-7.3 0-13.2 5.9-13.2 13.2 0 9.5 11.1 19.2 12.7 20.5a.8.8 0 0 0 1 0c1.6-1.3 12.7-11 12.7-20.5C37.9 18.9 32 13 24.7 13z" fill="#2E4020"/>
+      <circle cx="24.7" cy="26" r="3.9" fill="#F9F2CE"/>
+      <path d="M39.3 17.5c-7.5 0-13.6 6.1-13.6 13.6 0 9.3 11 18.9 12.8 20.3a1.2 1.2 0 0 0 1.6 0c1.8-1.4 12.8-11 12.8-20.3 0-7.5-6.1-13.6-13.6-13.6z" fill="#55713B" fill-opacity="0.82"/>
+      <circle cx="39.3" cy="31" r="4" fill="#F9F2CE"/>
+    </svg>
+    <h1>Terms of Service</h1>
+    <p class="meta">Roamatch &middot; Effective September 21, 2026</p>
+  </header>
+
+  <div class="summary">
+    <h2>The short version</h2>
+    <ul>
+      <li>You must be 18 or older to use Roamatch.</li>
+      <li>Be respectful. Harassment, hate, and sexual content involving minors are never allowed.</li>
+      <li>You own what you post, and you're responsible for it.</li>
+      <li>Meeting people in person carries risk — take care, and meet in public.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Agreeing to these terms</h2>
+    <p>By creating an account or using Roamatch, you agree to these terms and to our <a href="privacy.html">Privacy Policy</a>. If you don't agree, please don't use the app.</p>
+  </section>
+
+  <section>
+    <h2>Who can use Roamatch</h2>
+    <p>You must be at least 18 years old and able to form a binding agreement. You're responsible for keeping your login details secure and for everything that happens under your account.</p>
+  </section>
+
+  <section>
+    <h2>Community rules</h2>
+    <p>We have zero tolerance for objectionable content and abusive behaviour. You may not post or send content that:</p>
+    <ul>
+      <li>harasses, threatens, bullies, or intimidates anyone;</li>
+      <li>promotes hate or violence based on race, ethnicity, religion, disability, gender, sexual orientation, or any other protected characteristic;</li>
+      <li>is sexually explicit, or sexualises minors in any way;</li>
+      <li>is illegal, fraudulent, or promotes illegal activity;</li>
+      <li>impersonates someone else or misrepresents who you are;</li>
+      <li>is spam, or advertises goods or services without our permission;</li>
+      <li>shares another person's private information without their consent.</li>
+    </ul>
+    <p>You also may not use Roamatch to solicit money from other users, or attempt to access accounts or data that aren't yours.</p>
+  </section>
+
+  <section>
+    <h2>Reporting and enforcement</h2>
+    <p>You can report users and content, and block anyone, from within the app. We review reports and act on content that breaks these rules — removing it, and suspending or permanently banning the accounts responsible. We aim to act on reports within 24 hours.</p>
+  </section>
+
+  <section>
+    <h2>Your content</h2>
+    <p>You keep ownership of the photos, trips, itineraries, and messages you create. By posting them, you give Roamatch a limited licence to store, display, and share them within the app, in line with your privacy settings, so the service can work. This licence ends when you delete the content or your account.</p>
+    <p>Only post content you have the right to share.</p>
+  </section>
+
+  <section>
+    <h2>Meeting other travellers</h2>
+    <p>Roamatch helps you connect with people, but we don't run background checks and can't guarantee anyone's identity or behaviour. You're responsible for your own safety when meeting people or travelling with them. Meet in public places, tell someone you trust your plans, and trust your instincts.</p>
+  </section>
+
+  <section>
+    <h2>AI-generated content</h2>
+    <p>Buddy matches and itineraries are generated by AI and can be inaccurate or out of date. Treat them as suggestions — confirm opening times, prices, visa rules, and safety information yourself before relying on them.</p>
+  </section>
+
+  <section>
+    <h2>Ending your account</h2>
+    <p>You can delete your account at any time from Settings. We may suspend or remove accounts that break these terms or put others at risk.</p>
+  </section>
+
+  <section>
+    <h2>Disclaimers</h2>
+    <p>Roamatch is provided as it is, without guarantees that it will always be available or error-free. To the extent the law allows, we aren't liable for losses arising from your use of the app or from your interactions with other users, on or off the app.</p>
+  </section>
+
+  <section>
+    <h2>Changes to these terms</h2>
+    <p>If we make meaningful changes, we'll update the date at the top and let you know in the app. Continuing to use Roamatch after that means you accept the updated terms.</p>
+  </section>
+
+  <section>
+    <h2>Governing law</h2>
+    <p>These terms are governed by the laws of the Province of Ontario and the federal laws of Canada that apply there.</p>
+  </section>
+
+  <section>
+    <h2>Contact us</h2>
+    <div class="contact">
+      <p><strong>Email:</strong> <a href="mailto:support@roamatch.app">support@roamatch.app</a></p>
+      <p style="margin:0">Roamatch, Toronto, Ontario, Canada</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Roamatch. <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
