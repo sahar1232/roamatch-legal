@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SamePin — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F5EB;
+    --card: #FFFFFF;
+    --ink: #2D2C20;
+    --muted: #6E6B58;
+    --olive: #55713B;
+    --olive-deep: #2E4020;
+    --moss: #E4E8CF;
+    --line: #E3DFD2;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1B1D16;
+      --card: #24271D;
+      --ink: #E9E7DA;
+      --muted: #A9A690;
+      --olive: #A3BD83;
+      --olive-deep: #C9DDAF;
+      --moss: #2F3726;
+      --line: #3A3E30;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1B1D16;
+    --card: #24271D;
+    --ink: #E9E7DA;
+    --muted: #A9A690;
+    --olive: #A3BD83;
+    --olive-deep: #C9DDAF;
+    --moss: #2F3726;
+    --line: #3A3E30;
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 16px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 5rem;
+  }
+  header { margin-bottom: 2.5rem; }
+  .mark { width: 3.25rem; height: 3.25rem; display: block; margin-bottom: 1.5rem; }
+  h1, h2, h3 {
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    color: var(--olive-deep);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  h1 { font-size: clamp(2rem, 6vw, 2.75rem); font-weight: 700; margin: 0 0 0.5rem; }
+  .meta {
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9375rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  .summary {
+    background: var(--moss);
+    border-radius: 1rem;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 3rem;
+  }
+  .summary h2 { font-size: 1.125rem; margin: 0 0 0.75rem; }
+  .summary ul { margin: 0; padding-left: 1.1rem; }
+  .summary li { margin: 0.35rem 0; }
+  nav.toc {
+    border-left: 2px solid var(--line);
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    margin: 0 0 3rem;
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9375rem;
+  }
+  nav.toc ul { list-style: none; margin: 0; padding: 0; columns: 2 14rem; column-gap: 2rem; }
+  nav.toc li { margin: 0.3rem 0; break-inside: avoid; }
+  a { color: var(--olive); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+  a:hover { color: var(--olive-deep); }
+  a:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; border-radius: 2px; }
+  section { margin: 0 0 2.75rem; }
+  h2 { font-size: 1.5rem; font-weight: 700; margin: 0 0 0.9rem; }
+  h3 { font-size: 1.0625rem; font-weight: 600; margin: 1.5rem 0 0.4rem; color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+  li { margin: 0.3rem 0; }
+  .table-wrap { overflow-x: auto; margin: 0 0 1rem; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9688rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+  th, td { text-align: left; padding: 0.75rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th {
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    color: var(--olive-deep);
+    font-size: 0.9375rem;
+  }
+  tr:last-child td { border-bottom: none; }
+  .contact {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    padding: 1.5rem 1.75rem;
+  }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+  @media (max-width: 520px) {
+    main { padding: 2.5rem 1.25rem 4rem; }
+    body { font-size: 1rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+      <rect width="64" height="64" rx="14" fill="#F9F2CE"/>
+      <path d="M24.7 13c-7.3 0-13.2 5.9-13.2 13.2 0 9.5 11.1 19.2 12.7 20.5a.8.8 0 0 0 1 0c1.6-1.3 12.7-11 12.7-20.5C37.9 18.9 32 13 24.7 13z" fill="#2E4020"/>
+      <circle cx="24.7" cy="26" r="3.9" fill="#F9F2CE"/>
+      <path d="M39.3 17.5c-7.5 0-13.6 6.1-13.6 13.6 0 9.3 11 18.9 12.8 20.3a1.2 1.2 0 0 0 1.6 0c1.8-1.4 12.8-11 12.8-20.3 0-7.5-6.1-13.6-13.6-13.6z" fill="#55713B" fill-opacity="0.82"/>
+      <circle cx="39.3" cy="31" r="4" fill="#F9F2CE"/>
+    </svg>
+    <h1>Privacy Policy</h1>
+    <p class="meta">SamePin &middot; Effective September 21, 2026</p>
+  </header>
+
+  <div class="summary">
+    <h2>The short version</h2>
+    <ul>
+      <li>We collect what you give us to find travel buddies and plan trips: your profile, what you post, and your messages.</li>
+      <li>We don't sell your data, and there are no ads in SamePin.</li>
+      <li>Some features use AI. When they do, the relevant profile or trip details are sent to our AI provider to produce a result.</li>
+      <li>You can make your account private, and you can delete it — along with your data — from the app.</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <ul>
+      <li><a href="#collect">What we collect</a></li>
+      <li><a href="#use">How we use it</a></li>
+      <li><a href="#ai">AI features</a></li>
+      <li><a href="#visible">Who can see your information</a></li>
+      <li><a href="#providers">Service providers</a></li>
+      <li><a href="#retention">Keeping and deleting data</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#safety">Safety and moderation</a></li>
+      <li><a href="#age">Age requirement</a></li>
+      <li><a href="#transfers">Where data is stored</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <section id="collect">
+    <h2>What we collect</h2>
+
+    <h3>Information you give us</h3>
+    <ul>
+      <li><strong>Account details:</strong> your email address and password, used to sign in.</li>
+      <li><strong>Profile:</strong> your name, username, photo, bio, home location, travel styles, upcoming destinations and dates, and the countries you've visited.</li>
+      <li><strong>Things you create:</strong> trip posts, photos, itineraries, trip ideas and suggestions, open activities, comments, likes, and saved items.</li>
+      <li><strong>Messages:</strong> direct and group chats, including voice messages and items you share into a chat.</li>
+      <li><strong>Connections:</strong> who you follow, who follows you, your close friends list, the people you block, and who you've shared an itinerary with.</li>
+    </ul>
+
+    <h3>Information collected automatically</h3>
+    <ul>
+      <li><strong>Push notification token:</strong> a device identifier from Apple so we can send you notifications you've allowed.</li>
+      <li><strong>Basic technical data:</strong> app version, device type, and error information needed to keep the app working.</li>
+    </ul>
+    <p>We don't track you across other companies' apps or websites.</p>
+  </section>
+
+  <section id="use">
+    <h2>How we use it</h2>
+    <ul>
+      <li>To run your account and show your profile, trips, and itineraries.</li>
+      <li>To suggest compatible travel buddies and generate itineraries.</li>
+      <li>To deliver messages and send notifications about follows, requests, suggestions, and trips shared with you.</li>
+      <li>To keep people safe: reviewing reports, enforcing blocks, and removing content that breaks our rules.</li>
+      <li>To fix problems and improve the app.</li>
+    </ul>
+    <p>We don't sell your personal information, share it for advertising, or show ads.</p>
+  </section>
+
+  <section id="ai">
+    <h2>AI features</h2>
+    <p>Two features use artificial intelligence, provided by Anthropic:</p>
+    <ul>
+      <li><strong>Buddy matching</strong> compares your travel styles, upcoming destinations and dates, and bio with other travelers' to score how well you might get along. It uses the same details from their profiles.</li>
+      <li><strong>Itinerary generation</strong> uses the destination, trip length, travel style, and any notes you type — such as a hotel name or food preferences — along with the countries you've visited and trips you've liked, to shape the plan.</li>
+    </ul>
+    <p>Only the details needed for each request are sent, and they're sent from our servers, never directly from your phone. Under Anthropic's commercial terms, data sent through its API isn't used to train its models. Match scores are stored so they don't need to be recalculated, and they're cleared when either person updates their profile.</p>
+    <p>AI output can be wrong. Check opening times, prices, and safety information before relying on a generated itinerary.</p>
+  </section>
+
+  <section id="visible">
+    <h2>Who can see your information</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Information</th><th scope="col">Who can see it</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Your name, photo, and travel styles</td><td>Other SamePin users</td></tr>
+          <tr><td>Your trips and announcements</td><td>Everyone if your account is public; only approved followers if it's private</td></tr>
+          <tr><td>Close-friends posts</td><td>Only the people on your close friends list</td></tr>
+          <tr><td>Itineraries</td><td>Everyone if marked public; otherwise only you, the people you share it with, and members of its trip group</td></tr>
+          <tr><td>Direct and group messages</td><td>Only the people in that conversation</td></tr>
+          <tr><td>Open activities you post</td><td>Other SamePin users</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>You control who can message you in Settings. People you block can't see your profile or contact you.</p>
+  </section>
+
+  <section id="providers">
+    <h2>Service providers</h2>
+    <p>We use a small number of companies to run SamePin. They process data only on our behalf and only as needed to provide their service:</p>
+    <ul>
+      <li><strong>Supabase</strong> — database, sign-in, file storage, and server functions.</li>
+      <li><strong>Anthropic</strong> — AI for buddy matching and itinerary generation.</li>
+      <li><strong>Apple</strong> — push notifications and app distribution.</li>
+    </ul>
+    <p>We may also disclose information if the law requires it, or to protect someone's safety.</p>
+  </section>
+
+  <section id="retention">
+    <h2>Keeping and deleting data</h2>
+    <p>We keep your information while your account is open. You can delete your account at any time from Settings in the app. When you do, we delete your profile and the content you created, including posts, itineraries, messages you sent, and match scores. Some copies may remain in backups for a short period before they're overwritten.</p>
+    <p>Messages you sent to others are removed from their conversations too. Content someone else created — like an itinerary a friend shared with you — belongs to them and stays in their account.</p>
+  </section>
+
+  <section id="rights">
+    <h2>Your rights</h2>
+    <p>Depending on where you live, you may have the right to access the information we hold about you, correct it, delete it, receive a copy, or withdraw consent to how we use it. You can edit most of your information directly in the app, and delete your account from Settings. For anything else, contact us using the details below and we'll respond within 30 days.</p>
+    <p>If you're in Canada, you can also contact the Office of the Privacy Commissioner of Canada. In the EU or UK, you can contact your local data protection authority.</p>
+  </section>
+
+  <section id="safety">
+    <h2>Safety and moderation</h2>
+    <p>You can report users and content, and block anyone. When you report something, we review the reported content and the accounts involved. We remove content and accounts that break our community rules, and we have zero tolerance for harassment, hate, or sexual content involving minors.</p>
+    <p>Meeting people you've connected with online carries real risk. Meet in public places and tell someone you trust where you're going.</p>
+  </section>
+
+  <section id="age">
+    <h2>Age requirement</h2>
+    <p>SamePin is for adults. You must be at least 18 to create an account. We don't knowingly collect information from anyone younger; if we learn we have, we delete the account.</p>
+  </section>
+
+  <section id="transfers">
+    <h2>Where data is stored</h2>
+    <p>Your data is stored with Supabase in Canada. When you use AI features, the details needed for that request are processed by Anthropic in the United States. We rely on our providers' contractual protections for these transfers.</p>
+  </section>
+
+  <section id="security">
+    <h2>Security</h2>
+    <p>Data is encrypted in transit, and access is limited by account-level permissions so that people can only read what they're allowed to see. No system is perfectly secure, so please use a strong password and keep it to yourself.</p>
+  </section>
+
+  <section id="changes">
+    <h2>Changes to this policy</h2>
+    <p>If we make meaningful changes, we'll update the date at the top and let you know in the app before they take effect.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact us</h2>
+    <div class="contact">
+      <p>Questions or requests about your privacy:</p>
+      <p><strong>Email:</strong> <a href="mailto:privacy@samepin.com">privacy@samepin.com</a></p>
+      <p style="margin:0">SamePin, Toronto, Ontario, Canada</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 SamePin. This policy describes how the SamePin iOS app handles personal information.
+  </footer>
+</main>
+</body>
+</html>
