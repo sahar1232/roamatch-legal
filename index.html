@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SamePin — Find the right people to travel with</title>
+<meta name="description" content="SamePin matches solo travellers with compatible companions, then helps you plan the trip together — shared itineraries, trip ideas, and open activities to join.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7F5EB;
+    --card: #FFFFFF;
+    --ink: #2D2C20;
+    --muted: #6E6B58;
+    --olive: #55713B;
+    --olive-deep: #2E4020;
+    --moss: #E4E8CF;
+    --butter: #F9F2CE;
+    --line: #E3DFD2;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1B1D16; --card: #24271D; --ink: #E9E7DA; --muted: #A9A690;
+      --olive: #A3BD83; --olive-deep: #C9DDAF; --moss: #2F3726;
+      --butter: #3A3A22; --line: #3A3E30;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1B1D16; --card: #24271D; --ink: #E9E7DA; --muted: #A9A690;
+    --olive: #A3BD83; --olive-deep: #C9DDAF; --moss: #2F3726;
+    --butter: #3A3A22; --line: #3A3E30;
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 58rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  header { padding: 2rem 0 0; }
+  .brand { display: flex; align-items: center; gap: 0.75rem; }
+  .brand svg { width: 2.5rem; height: 2.5rem; }
+  .brand span { font-size: 1.25rem; font-weight: 700; color: var(--olive-deep); }
+
+  .hero { padding: 4.5rem 0 4rem; text-align: center; }
+  .hero h1 {
+    font-size: clamp(2.25rem, 7vw, 3.75rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--olive-deep);
+    margin: 0 0 1.25rem;
+  }
+  .hero p {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: clamp(1.0625rem, 2.5vw, 1.3125rem);
+    color: var(--muted);
+    max-width: 34rem;
+    margin: 0 auto 2rem;
+    line-height: 1.55;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--moss);
+    color: var(--olive-deep);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+  }
+
+  .features { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); padding-bottom: 4rem; }
+  .feature {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    padding: 1.75rem;
+  }
+  .feature h2 { font-size: 1.125rem; font-weight: 700; color: var(--olive-deep); margin: 0 0 0.5rem; }
+  .feature p { margin: 0; font-size: 0.9688rem; color: var(--muted); }
+
+  .support {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+  }
+  .support h2 { font-size: 1.25rem; font-weight: 700; color: var(--olive-deep); margin: 0 0 0.5rem; }
+  .support p { margin: 0 0 0.5rem; color: var(--muted); font-size: 0.9688rem; }
+  a { color: var(--olive); text-underline-offset: 0.18em; }
+  a:hover { color: var(--olive-deep); }
+  a:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; border-radius: 2px; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 1.75rem 0 3rem;
+    font-size: 0.875rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    align-items: center;
+  }
+  footer .spacer { flex: 1; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 64 64" aria-label="SamePin logo: two map pins">
+        <path d="M39.3 17.5c-7.5 0-13.6 6.1-13.6 13.6 0 9.3 11 18.9 12.8 20.3a1.2 1.2 0 0 0 1.6 0c1.8-1.4 12.8-11 12.8-20.3 0-7.5-6.1-13.6-13.6-13.6z" fill="#55713B" fill-opacity="0.85"/>
+        <circle cx="39.3" cy="31" r="4" fill="#F7F5EB"/>
+        <path d="M24.7 13c-7.3 0-13.2 5.9-13.2 13.2 0 9.5 11.1 19.2 12.7 20.5a.8.8 0 0 0 1 0c1.6-1.3 12.7-11 12.7-20.5C37.9 18.9 32 13 24.7 13z" fill="#2E4020"/>
+        <circle cx="24.7" cy="26" r="3.9" fill="#F7F5EB"/>
+      </svg>
+      <span>SamePin</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Find the right people to travel with</h1>
+    <p>SamePin matches you with travellers who share your destination, dates and style — then helps you plan the trip together.</p>
+    <p class="badge">Coming soon to the App Store</p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h2>Matched, not just nearby</h2>
+      <p>See how well you fit other travellers on destination, dates, budget and travel style — and why, in plain language.</p>
+    </div>
+    <div class="feature">
+      <h2>Plan it together</h2>
+      <p>Build an itinerary yourself or from a brief, share it with your group, and collect ideas from people who have actually been.</p>
+    </div>
+    <div class="feature">
+      <h2>Join what's happening</h2>
+      <p>Post an open activity or ask to join one nearby — a sunrise hike, a food walk — and land in a group chat with everyone going.</p>
+    </div>
+  </section>
+
+  <section class="support" id="support">
+    <h2>Support</h2>
+    <p>Questions, problems, or something to report? Email <a href="mailto:support@samepin.com">support@samepin.com</a> and we'll get back to you within two business days.</p>
+    <p>To report content or a traveller inside the app, tap the ••• menu on any post, profile or conversation.</p>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 SamePin · Toronto, Canada</span>
+    <span class="spacer"></span>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </footer>
+</div>
+</body>
+</html>
